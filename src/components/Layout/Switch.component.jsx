@@ -1,33 +1,30 @@
 import React from 'react';
 import styled from 'styled-components';
-
-function SwitchButton(props) {
-    const Switch = styled.label `
+const Switch = styled.label `
     position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-  input { 
-  opacity: 0;
-  width: 0;
-  height: 0;
-  
-}
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+    }
 `;
 
-    const Slider = styled.span `
-
+const Slider = styled.span `
     position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #11344A;
-  -webkit-transition: .4s;
-  transition: .4s;
-  border-radius: 34px;
-  margin-right:10px;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #11344A;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+    margin-right:10px;
     &:before {
     position: absolute;
     content: "";
@@ -39,14 +36,14 @@ function SwitchButton(props) {
     -webkit-transition: .4s;
     transition: .4s;
     border-radius: 50%;
-    }
-    
-
+}
 `;
+function SwitchButton(props) {
+   
     return ( 
         <div>
             <Switch>
-                <input type="checkbox" checked />
+                <input type="checkbox" defaultChecked />
                 <Slider />
             </Switch> { props.text } 
         </div>

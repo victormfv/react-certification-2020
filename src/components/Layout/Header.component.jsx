@@ -2,10 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import SwitchButton from './Switch.component';
 
-function Header() {
-
-    const Avatar = styled.svg `
-        background-color: #251212;
+const Avatar = styled.svg `
+        background-color: lightgray;
         width: 40px;
         height: 40px;
         overflow: hidden;
@@ -29,12 +27,13 @@ function Header() {
 
     const Nav = styled.div `
         background-color: #1C5476;
+        color:#FFF;
         transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
         box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
     `;
 
     const NavHeader = styled.div `
-        padding: 2px 20px;
+        padding: 4px 20px;
         width: 100%;
         display: flex;
         align-items:center;
@@ -100,7 +99,12 @@ function Header() {
 
     `;
 
-    const MenuLink = styled.a ``;
+    const MenuLink = styled.a `
+    color:white;`;
+
+function Header() {
+
+    
 
 return (
 <div>
@@ -115,8 +119,8 @@ return (
                 </MenuLink>
                 <SearchInput>
                     <Mag width="24" height="24" fill="none">
-                        <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" strokeWidth="2"
+                            strokeLinecap="round" strokeLinejoin="round"></path>
                     </Mag>
                     <Input type="text" placeholder="Search" />
                 </SearchInput>
