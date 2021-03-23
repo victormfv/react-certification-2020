@@ -32,7 +32,7 @@ function HomePage() {
   return (
     <section className="homepage" ref={sectionRef}>
       <h2>Welcome to the Challenge!</h2>
-      {authenticated ? (
+      {authenticated || true ? (
         <Videos>
          {videos? (videos.map((video)=>(
          <VideoCard key={video.etag} video={video.snippet} />))):""}
