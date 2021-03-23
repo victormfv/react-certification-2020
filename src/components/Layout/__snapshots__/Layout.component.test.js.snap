@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout Component renders correctly 1`] = `
+<div>
+  <div>
+    <div
+      className="sc-jSgupP jPTcJr"
+    >
+      <div
+        className="sc-gKsewC hKlcDd"
+      >
+        <div
+          className="sc-iBPRYJ gTPsek"
+        >
+          <a
+            className="sc-kEjbxe eCZKkm"
+            href="#"
+          >
+            <svg
+              aria-hidden="true"
+              className="sc-eCssSg eaErAB"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+              />
+            </svg>
+          </a>
+          <div
+            className="sc-fubCfw ibMeNV"
+          >
+            <svg
+              className="sc-hKgILt jtlFUc"
+              fill="none"
+              height="24"
+              width="24"
+            >
+              <path
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+              />
+            </svg>
+            <input
+              className="sc-pFZIQ hHrEWy"
+              placeholder="Search"
+              type="text"
+            />
+          </div>
+        </div>
+        <div
+          className="sc-jrAGrp dhtsXk"
+        >
+          <a
+            className="sc-kEjbxe eCZKkm"
+            href="#"
+          >
+            <div>
+              <label
+                className="sc-bdfBwQ hfvcRx"
+              >
+                <input
+                  defaultChecked={true}
+                  type="checkbox"
+                />
+                <span
+                  className="sc-gsTCUz knPZT"
+                />
+              </label>
+               
+              Dark Mode
+            </div>
+          </a>
+          <a
+            className="sc-kEjbxe eCZKkm"
+            href="#"
+          >
+            <svg
+              aria-hidden="true"
+              className="sc-dlfnbm fxUcQA"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main
+    className="container"
+  />
+</div>
+`;

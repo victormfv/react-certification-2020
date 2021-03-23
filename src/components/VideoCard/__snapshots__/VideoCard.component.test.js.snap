@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VideoCard Test renders correctly 1`] = `
+<div
+  className="sc-bdfBwQ dnLHsC"
+>
+  <div
+    className="sc-hKgILt fHa-drn"
+    src="url"
+  />
+  <h3
+    className="sc-gsTCUz cjhWa"
+  >
+    title
+  </h3>
+  <p
+    className="sc-dlfnbm BbtzF"
+  >
+    desc
+  </p>
+</div>
+`;

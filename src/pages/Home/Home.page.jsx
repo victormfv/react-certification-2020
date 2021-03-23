@@ -1,6 +1,6 @@
 import React, { useRef,useState, useEffect } from 'react';
 import { Link} from 'react-router-dom';
-import { useAuth } from '../../providers/Auth';
+//import { useAuth } from '../../providers/Auth';
 import './Home.styles.css';
 import VideoCard from '../../components/VideoCard';
 import styled from 'styled-components';
@@ -16,7 +16,6 @@ const Videos = styled.div`
 function HomePage() {
     const [videos, setVideos] = useState(null);
     const sectionRef = useRef(null);
-    const { authenticated } = useAuth();
 
     useEffect(() => {
     fetch(dataJson)
@@ -32,14 +31,10 @@ function HomePage() {
   return (
     <section className="homepage" ref={sectionRef}>
       <h2>Welcome to the Challenge!</h2>
-      {authenticated || true ? (
         <Videos>
          {videos? (videos.map((video)=>(
          <VideoCard key={video.etag} video={video.snippet} />))):""}
         </Videos>
-      ) : (
-        <Link to="/login">let me in →</Link>
-      )}
     </section>
   );
 }

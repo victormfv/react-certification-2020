@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Page renders correctly 1`] = `
+<section
+  className="homepage"
+>
+  <h2>
+    Welcome to the Challenge!
+  </h2>
+  <div
+    className="sc-eCssSg iUvlzN"
+  >
+    
+  </div>
+</section>
+`;
