@@ -41,9 +41,9 @@ function App() {
             <Route exact path="/login">
               <LoginPage />
             </Route>
-            <Private exact path="/secret">
+            <Route exact path="/secret">
               <SecretPage />
-            </Private>
+            </Route>
             <Route path="*">
               <NotFound />
             </Route>
