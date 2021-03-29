@@ -13,6 +13,12 @@ module.exports = {
         cyan: {
           250: '#61dafb',
         },
+        lightblue: {
+          850: '#1C5476',
+        },
+        gray: {
+          350: '#BDBDBD',
+        },
       },
     },
   },
