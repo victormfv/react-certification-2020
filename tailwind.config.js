@@ -20,6 +20,9 @@ module.exports = {
           350: '#BDBDBD',
         },
       },
+      width: {
+        90: '24rem',
+      },
     },
   },
   variants: {

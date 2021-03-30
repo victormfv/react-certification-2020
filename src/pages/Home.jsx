@@ -1,11 +1,8 @@
 import React from 'react';
+import VideoList from '../components/VideoList';
 
 function Home() {
-  return (
-    <div>
-      <h1>HOME</h1>
-    </div>
-  );
+  return <VideoList />;
 }
 
 export default Home;

@@ -15,7 +15,7 @@ function Navigation() {
 			</div>
 
 			<div className="flex-auto">
-				<div className="flex  pl-2 w-3/5 bg-opacity-20 bg-white rounded px-1  py-1">
+				<div className="flex pl-2 md:w-96 bg-opacity-20 bg-white rounded px-1  py-1">
 					<div className="flex items-center justify-between  h-8 w-8">
 						<img src={magnifying} alt="Profile" />
 					</div>
