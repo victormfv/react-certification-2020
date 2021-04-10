@@ -8,7 +8,7 @@ const VideoList = () => {
 
   const [isLoading, videoApi] = useVideoApi(url);
 
-  let content = <p>Loading pokemon list...</p>;
+  let content = <p>Loading videos...</p>;
 
   if (!isLoading && videoApi && videoApi.length > 0) {
     content = (
