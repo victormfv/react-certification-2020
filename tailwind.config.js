@@ -22,6 +22,12 @@ module.exports = {
       },
       width: {
         90: '24rem',
+        'youtube-m': '560px',
+        'youtube-l': '760px',
+      },
+      height: {
+        'youtube-m': '315px',
+        'youtube-l': '515px',
       },
     },
   },

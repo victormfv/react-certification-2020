@@ -1,8 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`VideoItem Test renders correctly 1`] = `
-<div
+<button
   className="w-90 max-w-96 flex-column border rounded-lg m-3 shadow-lg"
+  type="button"
 >
   <img
     alt="title"
@@ -22,5 +23,5 @@ exports[`VideoItem Test renders correctly 1`] = `
       desc
     </p>
   </div>
-</div>
+</button>
 `;

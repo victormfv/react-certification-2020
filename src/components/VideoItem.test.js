@@ -3,16 +3,16 @@ import VideoItem from "./VideoItem";
 import renderer from 'react-test-renderer';
 import { render, screen } from '@testing-library/react';
 const video={
-    etag: "LRviZfd_p3HDDD2uBk5Qv7zaEQU",
-    snippet: {
-        title: "title",
-        description: "desc",
-        thumbnails: {
+  etag: "LRviZfd_p3HDDD2uBk5Qv7zaEQU",
+  snippet: {
+      title: "title",
+      description: "desc",
+      thumbnails: {
         medium: {
-        url: "url"
+          url: "url"
         }
-        }
-}
+      }
+  }
 }
 describe("VideoItem Test", () => {
     it('renders correctly', () => {

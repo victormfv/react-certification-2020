@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Home Page renders correctly 1`] = `
-<p>
-  Could not fetch any data.
-</p>
+<div>
+  <p>
+    Loading ...
+  </p>
+</div>
 `;

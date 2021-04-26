@@ -9,8 +9,10 @@ import React, {
 const VideosContext = createContext({
   videos: [],
   loading: true,
+  playing: false,
   handleSubmit: () => {},
   handleSearchChange: () => {},
+  handleSelectVideo: () => {},
   term: '',
 });
 
@@ -28,12 +30,14 @@ const parseList = (data) => {
     description: video.snippet.description,
     thumbnail: video.snippet.thumbnails.medium.url,
     id: index + 1,
+    videoId: video.id.videoId,
   }));
   return list;
 };
 
 function VideosProvider({ children }) {
   const [loading, setLoading] = useState(true);
+  const [playing, setPlaying] = useState(false);
   const [videos, setVideos] = useState({});
   const [term, setTerm] = useState('gatos');
   const [url, setUrl] = useState(
@@ -49,6 +53,13 @@ function VideosProvider({ children }) {
 
   const handleSearchChange = (e) => {
     setTerm(e.target.value);
+    console.log(e);
+
+  };
+
+  const SelectVideo = (e) => {
+    console.log(e);
+    setPlaying(true);
   };
 
   const fetchData = useCallback(async () => {
@@ -71,7 +82,7 @@ function VideosProvider({ children }) {
   }, [fetchData]);
 
   return (
-    <VideosContext.Provider value={{ videos, loading, handleSubmit, handleSearchChange }}>
+    <VideosContext.Provider value={{ videos, loading, playing, handleSubmit, handleSearchChange, SelectVideo }}>
       {children}
     </VideosContext.Provider>
   );

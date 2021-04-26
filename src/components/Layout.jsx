@@ -7,7 +7,7 @@ function Layout({ children }) {
   return (
     <div>
       <Navigation />
-      <main className="flex">{children}</main>
+      <main className="flex min-w-full">{children}</main>
     </div>
   );
 }

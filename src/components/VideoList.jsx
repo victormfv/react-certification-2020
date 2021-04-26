@@ -3,16 +3,18 @@ import { useVideos } from '../state/VideosProvider';
 import VideoItem from './VideoItem';
 
 const VideoList = () => {
-  const { videos, loading } = useVideos();
+  const { videos, loading, SelectVideo } = useVideos();
+  const handleSelectVideo = (video) => () => SelectVideo(video);
+
 
   let content = <p>Loading video list...</p>;
 
   if (loading) content = <p>Loading ...</p>;
   else if (!loading && videos.length)
     content = (
-      <div className="flex flex-wrap flex-row justify-center p-20 min-h-screen ">
+      <div>
         {videos.map((video) => (
-          <VideoItem key={video.id} video={video} />
+          <VideoItem key={video.id} video={video} onSelectVideo={handleSelectVideo(video)} />
         ))}
       </div>
     );
